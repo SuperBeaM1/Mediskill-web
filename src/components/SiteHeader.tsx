@@ -57,7 +57,7 @@ export function SiteFooter() {
             MeditSkill · สมาธิ คือ นวัตกรรมของชีวิต ·{" "}
             <a href={LINE_URL} target="_blank" rel="noopener noreferrer" className="font-medium text-brand">LINE @meditskill</a>
           </span>
-          <span>เก็บข้อมูลผู้เรียนแค่ชื่อเล่นและปีเกิด ตาม PDPA</span>
+          <Link href="/privacy" className="hover:text-ink">นโยบายความเป็นส่วนตัว (PDPA)</Link>
         </div>
       </div>
     </footer>

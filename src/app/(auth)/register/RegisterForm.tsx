@@ -55,7 +55,7 @@ export function RegisterForm() {
       <div className="grid gap-1">
         <label htmlFor="consent" className="flex items-start gap-2.5 text-sm text-soft">
           <input id="consent" name="consent" type="checkbox" required className="mt-0.5 size-5 flex-none accent-brand" />
-          ยินยอมให้ MeditSkill เก็บข้อมูลบัญชี และข้อมูลผู้เรียนที่เพิ่มภายหลัง (ชื่อเล่น ปีเกิด คะแนนเกม) เพื่อทำรายงานพัฒนาการ ตามนโยบายความเป็นส่วนตัว
+          ยินยอมให้ MeditSkill เก็บข้อมูลบัญชี และข้อมูลผู้เรียนที่เพิ่มภายหลัง (ชื่อเล่น ปีเกิด คะแนนเกม) เพื่อทำรายงานพัฒนาการ ตาม<Link href="/privacy" target="_blank" className="text-brand underline">นโยบายความเป็นส่วนตัว</Link>
         </label>
         <FieldError id="consent-err" msg={f.consent} />
       </div>

@@ -106,7 +106,7 @@ export function TrialForm({ slots }: { slots: OpenSlot[] }) {
         </div>
         <label htmlFor="consent" className="flex items-start gap-2.5 text-sm text-soft">
           <input id="consent" name="consent" type="checkbox" className="mt-0.5 size-5 flex-none accent-brand" />
-          ยินยอมให้ MeditSkill ใช้ชื่อและเบอร์โทรนี้ติดต่อเรื่องคลาสทดลอง ตามนโยบายความเป็นส่วนตัว
+          ยินยอมให้ MeditSkill ใช้ชื่อและเบอร์โทรนี้ติดต่อเรื่องคลาสทดลอง ตาม<Link href="/privacy" target="_blank" className="text-brand underline">นโยบายความเป็นส่วนตัว</Link>
         </label>
         <Err id="consent-err" msg={f.consent} />
       </section>
