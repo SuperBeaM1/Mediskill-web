@@ -125,7 +125,7 @@ export default async function MissionsPage({ searchParams }: PageProps<"/app/mis
           <h2 id="h-week" className="text-lg font-semibold">7 วันล่าสุด</h2>
           <ol className="grid grid-cols-7 gap-1.5 text-center">
             {week.map((d) => (
-              <li key={d.day} className={`grid justify-items-center gap-1 rounded-[10px] py-2.5 ${d.done.length ? "bg-brand-tint" : "bg-bg"}`}>
+              <li key={d.day} className={`grid justify-items-center gap-1 rounded-[10px] py-2.5 ${d.done.length ? "bg-brand-tint" : "bg-mute"}`}>
                 <span className="text-xs text-soft">{DOW[new Date(`${d.day}T00:00:00Z`).getUTCDay()]}</span>
                 <Star on={d.stars > 0} />
                 <b className="text-sm tabular-nums">{d.stars}</b>

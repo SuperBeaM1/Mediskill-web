@@ -109,7 +109,7 @@ export function GoNoGo() {
       <button
         onClick={press}
         aria-label="กด"
-        className={`grid aspect-square w-full max-w-[260px] cursor-pointer place-items-center rounded-full border-4 text-[96px] transition ${flash === "ok" ? "border-brand bg-brand-tint" : flash === "bad" ? "border-coral bg-coral-tint" : "border-line bg-bg"}`}
+        className={`grid aspect-square w-full max-w-[260px] cursor-pointer place-items-center rounded-full border-4 text-[96px] transition ${flash === "ok" ? "border-brand bg-brand-tint" : flash === "bad" ? "border-coral bg-coral-tint" : "border-line bg-mute"}`}
       >
         <span aria-hidden="true">{item ?? ""}</span>
       </button>

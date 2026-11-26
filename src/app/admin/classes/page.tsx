@@ -55,7 +55,7 @@ export default async function ClassesPage() {
                   <span>ที่นั่ง</span>
                   <b className={`tabular-nums ${full ? "text-coral" : ""}`}>{seats}/{c.capacity}{full ? " เต็ม" : ""}</b>
                 </div>
-                <div className="mt-1.5 h-2.5 overflow-hidden rounded-full bg-bg" role="img" aria-label={`จองแล้ว ${seats} จาก ${c.capacity} ที่นั่ง`}>
+                <div className="mt-1.5 h-2.5 overflow-hidden rounded-full bg-mute" role="img" aria-label={`จองแล้ว ${seats} จาก ${c.capacity} ที่นั่ง`}>
                   <span className={`block h-full rounded-full ${full ? "bg-coral" : "bg-brand"}`} style={{ width: `${Math.min((seats / c.capacity) * 100, 100)}%` }} />
                 </div>
                 <span className="hint">ชำระแล้ว {active} · รอชำระ {seats - active}</span>

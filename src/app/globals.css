@@ -1,16 +1,19 @@
 @import "tailwindcss";
 
-/* MeditSkill tokens from the logo: navy wordmark, orange sphere, amber "Skill" */
+/* MeditSkill tokens from the logo: white ground, navy wordmark, orange sphere, amber "Skill". Light theme only. */
 :root {
-  --bg: #f7f8fc;
+  color-scheme: light;
+  --bg: #ffffff;
   --surface: #ffffff;
+  --mute: #f3f5fa;
+  --warm: #fff6ec;
   --ink: #141d4a;
   --soft: #4e5878;
   --line: #e1e5f0;
   --brand: #1b2a7a;
   --brand-ink: #ffffff;
   --brand-tint: #e8ebf7;
-  --orange: #d9620b;
+  --orange: #c2540a;
   --orange-tint: #feeedf;
   --sun: #a66f00;
   --sun-tint: #fff4d6;
@@ -18,30 +21,11 @@
   --coral-tint: #f9e6e4;
   --err: #b23a2a;
 }
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg: #0c1230;
-    --surface: #141b40;
-    --ink: #e8ebf7;
-    --soft: #a6afcf;
-    --line: #273061;
-    --brand: #9aabff;
-    --brand-ink: #0c1230;
-    --brand-tint: #1e2856;
-    --orange: #ff9a4a;
-    --orange-tint: #3a2416;
-    --sun: #ffc94a;
-    --sun-tint: #3a3016;
-    --coral: #f08c7c;
-    --coral-tint: #3e2621;
-    --err: #f08c7c;
-    color-scheme: dark;
-  }
-}
-
 @theme inline {
   --color-bg: var(--bg);
   --color-surface: var(--surface);
+  --color-mute: var(--mute);
+  --color-warm: var(--warm);
   --color-ink: var(--ink);
   --color-soft: var(--soft);
   --color-line: var(--line);
@@ -83,7 +67,7 @@ h1, h2, h3 {
   @apply inline-flex min-h-11 cursor-pointer items-center justify-center gap-2 rounded-[10px] px-5 font-display font-medium no-underline transition active:scale-[.97] disabled:cursor-not-allowed disabled:opacity-60;
 }
 @utility btn-primary {
-  @apply inline-flex min-h-11 cursor-pointer items-center justify-center gap-2 rounded-[10px] bg-brand px-5 font-display font-medium text-brand-ink no-underline transition hover:brightness-95 active:scale-[.97] disabled:cursor-not-allowed disabled:opacity-60;
+  @apply inline-flex min-h-11 cursor-pointer items-center justify-center gap-2 rounded-[10px] bg-orange px-5 font-display font-medium text-white no-underline shadow-sm shadow-orange/20 transition hover:brightness-95 active:scale-[.97] disabled:cursor-not-allowed disabled:opacity-60;
 }
 @utility btn-ghost {
   @apply inline-flex min-h-11 cursor-pointer items-center justify-center gap-2 rounded-[10px] border border-line bg-transparent px-5 font-display font-medium text-ink no-underline transition hover:border-brand active:scale-[.97] disabled:cursor-not-allowed disabled:opacity-60;

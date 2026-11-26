@@ -99,7 +99,7 @@ export default async function ReportPage({ searchParams }: PageProps<"/app/repor
                     return (
                       <td key={m.month} className="py-2.5">
                         <span className="inline-flex items-center gap-1.5">
-                          <span className="inline-block h-1.5 w-8 overflow-hidden rounded-full bg-bg" aria-hidden="true">
+                          <span className="inline-block h-1.5 w-8 overflow-hidden rounded-full bg-mute" aria-hidden="true">
                             <span className="block h-full rounded-full bg-brand" style={{ width: `${v ?? 0}%` }} />
                           </span>
                           {v ?? "–"}

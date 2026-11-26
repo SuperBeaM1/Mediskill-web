@@ -34,7 +34,7 @@ export function AuthShell({
           <p className="mt-auto border-t border-brand/25 pt-7 text-[15px] text-soft">{note}</p>
         </aside>
         <div className="order-1 min-w-0 rounded-2xl md:order-2 border border-line bg-surface p-6 shadow-lg shadow-ink/5 md:p-9">
-          <nav aria-label="สลับหน้า" className="mb-6 flex rounded-[10px] bg-bg p-1">
+          <nav aria-label="สลับหน้า" className="mb-6 flex rounded-[10px] bg-mute p-1">
             {(["login", "register"] as const).map((k) => (
               <Link
                 key={k}

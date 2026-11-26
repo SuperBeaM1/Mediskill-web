@@ -84,7 +84,7 @@ export default function Home() {
         </div>
 
         <section className="pt-14">
-          <div className="grid gap-8 rounded-2xl border border-line bg-surface p-6 md:grid-cols-[.9fr_1.1fr] md:p-8">
+          <div className="grid gap-8 rounded-2xl border border-orange/25 bg-warm p-6 md:grid-cols-[.9fr_1.1fr] md:p-8">
             <div>
               <span className="eyebrow">ที่มาของ PAC&apos;C</span>
               <h2 className="mt-3.5 text-[clamp(24px,3vw,32px)] font-semibold">พัฒนาจากผลการวิจัยระดับโลกจากญี่ปุ่น</h2>

@@ -98,7 +98,7 @@ export default async function Dashboard({ searchParams }: PageProps<"/app">) {
       <div className="grid grid-cols-2 gap-3 lg:grid-cols-4">
         <Tile k="คาบถัดไป" v={next ? `${fmtDate(next.starts_at)} ${fmtTime(next.starts_at)}` : "ไม่มีคาบที่จะถึง"} s={next ? `${next.topic} · ${enrollment.class.room ?? ""}` : enrollment.class.title} />
         <Tile k={enrollment.class.course.name} v={`${attended}/${total} คาบ`}>
-          <div className="mt-2 h-1.5 overflow-hidden rounded-full bg-bg">
+          <div className="mt-2 h-1.5 overflow-hidden rounded-full bg-mute">
             <span className="block h-full rounded-full bg-brand" style={{ width: `${(attended / total) * 100}%` }} />
           </div>
         </Tile>
@@ -130,7 +130,7 @@ export default async function Dashboard({ searchParams }: PageProps<"/app">) {
           )}
           <Link href={`/app/report?child=${current.id}`} className="text-sm font-medium text-brand">ดูรายงาน 6-I ฉบับเต็ม</Link>
           {note && (
-            <div className="rounded-r-[10px] border-l-3 border-brand bg-bg px-4 py-3.5 text-[15px]">
+            <div className="rounded-r-[10px] border-l-3 border-orange bg-warm px-4 py-3.5 text-[15px]">
               <b className="mb-1 block font-display text-sm">บันทึกจากครู</b>
               {note}
             </div>

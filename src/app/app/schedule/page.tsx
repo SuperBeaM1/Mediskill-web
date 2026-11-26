@@ -146,6 +146,6 @@ function DayTag({ s, now }: { s: SessionRow; now: number }) {
         : ["bg-coral-tint text-coral", "ขาด"]
       : new Date(s.starts_at).getTime() > now
         ? ["bg-brand text-brand-ink", fmtTime(s.starts_at)]
-        : ["bg-bg text-soft", "รอเช็กชื่อ"];
+        : ["bg-mute text-soft", "รอเช็กชื่อ"];
   return <span className={`truncate rounded px-1 text-center text-[10px] leading-normal sm:text-[11px] ${cls}`}>{text}</span>;
 }

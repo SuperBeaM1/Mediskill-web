@@ -7,7 +7,7 @@ export function SixIBars({ rows, label }: { rows: [string, number | null, number
         return (
           <div key={k} className="grid grid-cols-[44px_1fr_48px] items-center gap-3 tabular-nums">
             <b className="font-display text-[15px] font-semibold">{k}</b>
-            <div className="relative h-3.5 overflow-hidden rounded-full bg-bg">
+            <div className="relative h-3.5 overflow-hidden rounded-full bg-mute">
               {prev != null && <span className="absolute inset-y-0 left-0 rounded-full bg-line" style={{ width: `${prev}%` }} />}
               {now != null && <span className="absolute inset-y-0 left-0 rounded-full bg-brand" style={{ width: `${now}%` }} />}
             </div>

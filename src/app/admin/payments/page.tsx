@@ -99,7 +99,7 @@ export default async function PaymentsPage({ searchParams }: PageProps<"/admin/p
               </dl>
 
               {url ? (
-                <a href={url} target="_blank" rel="noopener noreferrer" className="block overflow-hidden rounded-xl border border-line bg-bg">
+                <a href={url} target="_blank" rel="noopener noreferrer" className="block overflow-hidden rounded-xl border border-line bg-mute">
                   {/* eslint-disable-next-line @next/next/no-img-element -- signed URL from private storage */}
                   <img src={url} alt={`สลิปของ ${p.parent?.full_name ?? "ผู้ปกครอง"}`} className="max-h-[420px] w-full object-contain" />
                   <span className="block border-t border-line px-3 py-2 text-center text-sm text-brand">เปิดสลิปขนาดเต็ม</span>
